@@ -13,11 +13,11 @@ export default {
         ],
 
         window: {
-            navigationBarBackgroundColor: '#211E2E',
-            navigationBarTextStyle: 'white',
-            backgroundTextStyle: 'light',
+            navigationBarBackgroundColor: '#fff',
+            navigationBarTextStyle: 'black',
+            backgroundTextStyle: 'black',
             enablePullDownRefresh: true,
-            backgroundColor: '#ccc'
+            backgroundColor: 'light'
         },
 
         networkTimeout: {
