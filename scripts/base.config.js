@@ -25,6 +25,24 @@ module.exports = {
             useVuePrefix: true,
             // 标签转换配置项
             transformTags: {
+                div: 'view',
+                p: 'view',
+                h1: 'view',
+                h2: 'view',
+                h3: 'view',
+                img: 'image',
+                // span 会被转为 view 标签，若想让它拥有 inline 属性，可通过 配置 class 值如：okam-inline 进行 样式属性控制
+                // 注：okam-inline 样式 需自行在样式文件(app.css)中定义
+                span: {
+                    tag: 'view',
+                    class: 'okam-inline'
+                },
+                // a 将标签转为 navigator 标签，href 属性 转为 url 属性
+                a: {
+                    tag: 'navigator',
+                    class: 'okam-inline',
+                    href: 'url'
+                }
             }
         }
     },

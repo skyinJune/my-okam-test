@@ -1,20 +1,20 @@
 <template>
-    <view class="home-wrap">
-        <div class="edit-wrapper">
-            <input type="text" class="input"/>
-        </div>
-        <div>{{btnText}}</div>
-    </view>
+    <div class="home-wrapper">
+        <navigate-bar
+            title="首页"
+        />
+    </div>
 </template>
 <script>
+import NavigateBar from '../../components/NavigateBar'
 
 export default {
     config: {
-        title: 'Home'
+        navigationStyle: 'custom'
     },
 
     components: {
-
+        NavigateBar
     },
 
     data: {
@@ -28,13 +28,7 @@ export default {
 };
 </script>
 <style lang="stylus">
-.home-wrap
-    background-color #ffffff
-    .edit-wrapper
-        text-align center
-        .input
-            width 100%
-            background-color #f0f0f0
-            border-radius 5%
+.home-wrapper
+    padding-top 40px
 </style>
 
