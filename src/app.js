@@ -9,7 +9,10 @@
 export default {
     config: {
         pages: [
-            'pages/home/index'
+            'pages/home/index',
+            'pages/discovery/index',
+            'pages/message/index',
+            'pages/my/index'
         ],
 
         window: {
@@ -19,7 +22,35 @@ export default {
             enablePullDownRefresh: true,
             backgroundColor: 'light'
         },
-
+        tabBar: {
+            list: [
+                {
+                    pagePath: 'pages/home/index',
+                    iconPath: '',
+                    selectedIconPath: '',
+                    text: '首页'
+                },
+                {
+                    pagePath: 'pages/discovery/index',
+                    iconPath: '',
+                    selectedIconPath: '',
+                    text: '发现'
+                },
+                {
+                    pagePath: 'pages/message/index',
+                    iconPath: '',
+                    selectedIconPath: '',
+                    text: '消息'
+                },
+                {
+                    pagePath: 'pages/my/index',
+                    iconPath: '',
+                    selectedIconPath: '',
+                    text: '我的'
+                },
+            ],
+            selectedColor: '#3388FF'
+        },
         networkTimeout: {
             request: 30000
         },
