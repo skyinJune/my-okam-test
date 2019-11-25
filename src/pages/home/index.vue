@@ -3,6 +3,7 @@
         <navigate-bar
             title="首页"
         />
+        <div for="dataList">{{item}}</div>
     </div>
 </template>
 <script>
@@ -19,16 +20,23 @@ export default {
 
     data: {
         btnText: 'Hello',
+        dataList: [1,2,3]
     },
 
     methods: {
+        onLoad() {
+            console.log('home load');
+        },
 
+        onShow() {
+            console.log('home show');
+        }
         
     }
 };
 </script>
 <style lang="stylus">
 .home-wrapper
-    padding-top 40px
+    padding-top 200px
 </style>
 

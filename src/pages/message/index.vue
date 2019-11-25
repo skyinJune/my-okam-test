@@ -3,6 +3,7 @@
         <navigate-bar
             title="消息"
         />
+        <div class="text">{{btnText}}</div>
     </div>
 </template>
 <script>
@@ -29,6 +30,6 @@ export default {
 </script>
 <style lang="stylus">
 .home-wrapper
-    padding-top 40px
+    padding-top 200px
 </style>
 

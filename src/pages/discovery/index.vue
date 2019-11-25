@@ -3,7 +3,7 @@
         <navigate-bar
             title="发现"
         />
-        <div class="text">{{btnText}}</div>
+        <div for="dataList">{{item}}</div>
     </div>
 </template>
 <script>
@@ -20,18 +20,23 @@ export default {
 
     data: {
         btnText: 'Hello',
+        dataList: [4,5,6]
     },
 
     methods: {
+        onLoad() {
+            console.log('disc load');
+        },
 
+        onShow() {
+            console.log('disc show');
+        }
         
     }
 };
 </script>
 <style lang="stylus">
 .home-wrapper
-    padding-top 250px
-    .text
-        font-size 50px
+    padding-top 200px
 </style>
 
